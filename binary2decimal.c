@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-unsigned int binary2decimal(const char *b) 
+int binary2decimal(const char *b) 
 {
     if (b == NULL) 
     {
@@ -28,9 +28,18 @@ unsigned int binary2decimal(const char *b)
     return decimal;
 }
 
-int main() {
-    const char *binary_num = "1101";
-    unsigned int result = binary2decimal(binary_num);
-    printf("The binary number %s is equivalent to decimal: %u\n", binary_num, result);
+
+// test the function(binary2decimal)
+
+
+int main() 
+{
+    const char *binarynumber;
+    int decimal;
+    binarynumber = "1101";
+    decimal = binary2decimal(binarynumber);
+    
+    printf("The binary number %s is equivalent to decimal: %d\n", binarynumber, decimal);
+    
     return 0;
 }
