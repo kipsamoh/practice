@@ -7,9 +7,10 @@ int binary2decimal(const char *b)
         return 0; // Return 0 if the string is NULL
     }
 
+    int i;
     int decimal = 0;
 
-    for (int i = 0; b[i] != '\0'; i++)
+    for (i = 0; b[i] != '\0'; i++)
     {
         if (b[i] == '0')
         {
@@ -35,11 +36,11 @@ int binary2decimal(const char *b)
 int main() 
 {
     const char *binarynumber;
-    int decimal;
     binarynumber = "1101";
-    decimal = binary2decimal(binarynumber);
+    int x;
+    x = binary2decimal(binarynumber);
     
-    printf("The binary number %s is equivalent to decimal: %d\n", binarynumber, decimal);
+    printf("The binary number %s is equivalent to decimal: %d\n", binarynumber, x);
     
     return 0;
 }
